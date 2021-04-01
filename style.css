@@ -394,7 +394,6 @@ div.col img{
 	margin: 0.5em auto;
 	width:95%;
 	padding:0.5em;
-	border:2px solid red;
 }
 div.system_software{
 	width:95%;
@@ -505,12 +504,46 @@ div.cimg{
 	display: flex;
 justify-content: center;
 }
+@media screen and (max-width:952px){
+	.system_ss{
+	display:block;
+}
+div.srv{
+	display: block;
+	width:95%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+div.cimg + img{
+	width:100%;
+}
+.app_ss{
+	display:block;
+	margin:0 auto;
+	width:95%;
+	}
+	div.apv{
+display: block;
+text-align: center;
+	}
+	div.apv + img{
+		width:100%;
+		margin: 0 auto;
+	}
+	.apv + .apv{
+		border:unset;
+	}
+	.srv + .srv{
+		border: unset;
+	}
+}
 /*Solutions Section*/
 .container3{
 	
 	width:100%;
 	margin:0 auto;
-	border:1px solid red;
+
 
 	max-width: 1700px;
 }
@@ -528,7 +561,6 @@ color:#FFFFFF;
 cursor: pointer;
 }
 .wrapper3{
-	border:1px solid red;
 	width:90%;
 	margin:0 auto;
 	display: flex;
@@ -537,7 +569,15 @@ cursor: pointer;
 	text-align: center;
 	background:#04BCD4;
 }
+.wrapper11 > h3{
+	text-align: center;
+	background:#04BCD4;
+}
 div.wrapper6{
+	flex:0.5;
+	overflow: scroll;
+}
+div.wrapper11{
 	flex:0.5;
 	overflow: scroll;
 }
@@ -646,6 +686,41 @@ div.wrapper6 .apsol{
 	max-height: 500px;
 	width:100%;
 }
+@media screen and (max-width:952px){
+div.wrapper6{
+	display:block;
+	height:700px;
+	width:95%;
+	margin: 0 auto;
+}	
+div.wrapper11{
+	display:block;
+	height:700px;
+	width:95%;
+	margin: 0 auto;
+}
+div.wrapper6 .sssol{
+	display:block;
+	overflow-y: scroll;
+}
+div.wrapper11 .apsol{
+display:block;
+overflow-y: scroll;
+}
+.wrapper3{
+	width:100%;
+	margin:0 auto;
+	display: block;
+}
+.wrapper6 > h3{
+	text-align: center;
+	background:#04BCD4;
+}
+.wrapper11 > h3{
+	text-align: center;
+	background:#04BCD4;
+}
+}
 /*Footer Section*/
 .main_footer{
 	max-width:1700px;
@@ -694,7 +769,6 @@ div.wrapper6 .apsol{
 	color:blue;
 	background: #000000;
 }
-
 .M-softsln_privacy li:nth-child(2){
 	border-left:1px solid #FFFFFF;
 	margin-left:0.5em;
@@ -716,7 +790,6 @@ div.wrapper6 .apsol{
 	margin-left: 2.0em;
 }
 .footer_wrap h5{
-	border:1px solid red;
 	line-height:20px;
 	text-align:center;
 	font-size: 28px;
@@ -745,7 +818,12 @@ div.contact_us ul li a{
 	padding-right:0.3125em;
 }
 @media screen and (max-width:952px){
-.footer_wrap{
+	div.main_footer{
+		height:auto;
+		background: #242424;
+	    color:#bdbdbd;
+	}
+div.footer_wrap{
 	display:block;
 	text-align: center;
 }
@@ -755,8 +833,13 @@ div.contact_us ul li a{
 	width:100%;
 }
 .designer{
+	display:inline-block;
 	margin-top:20px;
 	margin-bottom: 20px;
+	width:100%;
+    background: #242424;
+	color:#bdbdbd;
+	margin:0 auto;
 }
 div.location{
 	display: block;
@@ -769,4 +852,15 @@ div.contact_us{
 	margin-top:20px;
 	margin-bottom: 20px;
 	}
+div.contact_us ul{
+	line-height: 20px;
+	text-align:center;
+	display: block;
+
+}
+div.contact_us ul li{
+	line-height: 20px;
+	text-align: center;
+	display:block;
+}
 }
