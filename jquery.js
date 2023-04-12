@@ -1,3 +1,3 @@
-$(document).ready(function() {
-	$('time.timeago').timeago();
+$(document).ready(function () {
+  $("time.timeago").timeago();
 });
